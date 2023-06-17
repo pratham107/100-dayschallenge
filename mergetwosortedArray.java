@@ -32,3 +32,33 @@ class Solution
        
     }
 }
+
+
+code studio question 
+without 0
+    
+code: 
+public class Solution {
+    public static int[] ninjaAndSortedArrays(int arr1[], int arr2[], int m, int n) {
+            ArrayList<Integer> list=new ArrayList<>();
+            for(int i=0;i<m;i++)
+            {
+                list.add(arr1[i]);
+            }  
+            for(int j=0;j<n;j++)
+            {
+                list.add(arr2[j]);
+            } 
+             for(int k=0;k<list.size();k++)
+            {
+                if(list.get(k)!=0)
+                {
+                    arr1[k]=list.get(k);
+                }
+            } 
+            Arrays.sort(arr1);         
+ 
+
+       return arr1;
+    }
+}
