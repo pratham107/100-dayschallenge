@@ -1,0 +1,21 @@
+lass Reverse
+{
+    // Complete the function
+    // str: input string
+    public static String reverseWord(String str)
+    {
+       ArrayList<Character> ch=new ArrayList<>();
+       for(int i=str.length()-1;i>=0;i--)
+       {
+           ch.add(str.charAt(i));
+       }
+       char[] ch1=new char[ch.size()];
+       for(int i=0;i<ch1.length;i++)
+       {
+           ch1[i]=ch.get(i);
+       }
+       String s1=new String(ch1);
+        return s1;
+    }
+   
+}
